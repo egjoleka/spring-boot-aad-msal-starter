@@ -20,8 +20,6 @@ public class SecurePageController {
     @RequestMapping("/secure_page")
     public ModelAndView securePage(){
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-//        authentication.getPrincipal();
-//        ((OAuth2Authentication) authentication).userAuthentication.getDetails()
         ModelAndView mav = new ModelAndView("secure_page");
 
         return mav;
